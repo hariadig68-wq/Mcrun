@@ -1,1 +1,381 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MC RUN 2026 - Tambah Kuota</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#f3fff8,#e8fff1,#ffffff);
+color:#111;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(10px);
+padding:18px 20px;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:2rem;
+font-weight:900;
+color:#00b248;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+border-radius:999px;
+text-decoration:none;
+font-weight:700;
+background:linear-gradient(135deg,#00ff88,#00b248);
+color:#000;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:120px 20px 80px;
+background:url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=1600&auto=format&fit=crop') center/cover;
+}
+
+.overlay{
+background:rgba(255,255,255,.85);
+padding:60px 40px;
+max-width:900px;
+width:100%;
+border-radius:35px;
+text-align:center;
+backdrop-filter:blur(10px);
+box-shadow:0 15px 40px rgba(0,0,0,.1);
+}
+
+.hero h1{
+font-size:clamp(3rem,8vw,6rem);
+font-weight:900;
+line-height:1;
+color:#00b248;
+}
+
+.hero p{
+margin-top:20px;
+font-size:1.1rem;
+line-height:1.8;
+color:#444;
+}
+
+section{
+padding:100px 20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.title h2{
+font-size:3rem;
+font-weight:900;
+color:#00b248;
+margin-bottom:10px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.card{
+background:#fff;
+padding:35px;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+font-size:2rem;
+color:#00b248;
+margin-bottom:15px;
+}
+
+.price{
+font-size:2.5rem;
+font-weight:900;
+margin:15px 0;
+}
+
+.card p{
+line-height:1.8;
+color:#555;
+margin-bottom:25px;
+}
+
+.form-box{
+max-width:800px;
+margin:auto;
+background:#fff;
+padding:40px;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+input,select,textarea{
+width:100%;
+padding:18px;
+border:none;
+background:#f2f2f2;
+border-radius:18px;
+margin-bottom:20px;
+font-size:1rem;
+}
+
+footer{
+text-align:center;
+padding:40px 20px;
+color:#555;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:3rem;
+}
+
+.overlay{
+padding:40px 25px;
+}
+
+.title h2{
+font-size:2.2rem;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">MC RUN 2026</div>
+<a href="#daftar" class="btn">Daftar</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="overlay reveal">
+<h1>TAMBAH KUOTA</h1>
+<p>
+1500 peserta tambahan resmi dibuka sekarang.
+Pilih kategori favoritmu dan amankan slot sebelum penuh.
+</p>
+<br>
+<a href="#ticket" class="btn">Lihat Tiket</a>
+</div>
+</section>
+
+<section id="ticket">
+<div class="container">
+<div class="title reveal">
+<h2>DAFTAR TIKET</h2>
+<p>Pilih kategori terbaik sesuai kebutuhanmu.</p>
+</div>
+
+<div class="cards">
+
+<div class="card reveal">
+<h3>3KM - Regular</h3>
+<div class="price">Rp 225.000</div>
+<p>
+• BIB RFID Chip<br>
+• Medal<br>
+• Jersey<br>
+• Refreshment<br>
+• Doorprize<br>
+• Photo Tagging<br>
+• E-Certificate<br>
+• Mystery Travel Bag
+</p>
+<a href="#daftar" class="btn">Pilih Tiket</a>
+</div>
+
+<div class="card reveal">
+<h3>3KM - Long Jersey</h3>
+<div class="price">Rp 235.000</div>
+<p>
+• BIB RFID Chip<br>
+• Medal<br>
+• Long Jersey<br>
+• Refreshment<br>
+• Doorprize<br>
+• Photo Tagging<br>
+• E-Certificate<br>
+• Mystery Travel Bag
+</p>
+<a href="#daftar" class="btn">Pilih Tiket</a>
+</div>
+
+<div class="card reveal">
+<h3>5KM - Regular</h3>
+<div class="price">Rp 225.000</div>
+<p>
+• BIB RFID Chip<br>
+• Medal<br>
+• Jersey<br>
+• Refreshment<br>
+• Doorprize<br>
+• Photo Tagging<br>
+• E-Certificate<br>
+• Mystery Travel Bag
+</p>
+<a href="#daftar" class="btn">Pilih Tiket</a>
+</div>
+
+<div class="card reveal">
+<h3>5KM - Long Jersey</h3>
+<div class="price">Rp 235.000</div>
+<p>
+• BIB RFID Chip<br>
+• Medal<br>
+• Long Jersey<br>
+• Refreshment<br>
+• Doorprize<br>
+• Photo Tagging<br>
+• E-Certificate<br>
+• Mystery Travel Bag
+</p>
+<a href="#daftar" class="btn">Pilih Tiket</a>
+</div>
+
+<div class="card reveal">
+<h3>10KM - Regular</h3>
+<div class="price">Rp 275.000</div>
+<p>
+• BIB RFID Chip<br>
+• Medal<br>
+• Jersey<br>
+• Refreshment<br>
+• Doorprize<br>
+• Photo Tagging<br>
+• E-Certificate<br>
+• Mystery Travel Bag
+</p>
+<a href="#daftar" class="btn">Pilih Tiket</a>
+</div>
+
+<div class="card reveal">
+<h3>10KM - Long Jersey</h3>
+<div class="price">Rp 285.000</div>
+<p>
+• BIB RFID Chip<br>
+• Medal<br>
+• Long Jersey<br>
+• Refreshment<br>
+• Doorprize<br>
+• Photo Tagging<br>
+• E-Certificate<br>
+• Mystery Travel Bag
+</p>
+<a href="#daftar" class="btn">Pilih Tiket</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="daftar">
+<div class="container">
+<div class="title reveal">
+<h2>FORM PENDAFTARAN</h2>
+<p>Isi data dengan benar sebelum submit.</p>
+</div>
+
+<div class="form-box reveal">
+<form>
+<input type="text" placeholder="Nama Lengkap">
+<input type="email" placeholder="Alamat Email">
+<select>
+<option>Pilih Kategori</option>
+<option>3KM Regular</option>
+<option>3KM Long Jersey</option>
+<option>5KM Regular</option>
+<option>5KM Long Jersey</option>
+<option>10KM Regular</option>
+<option>10KM Long Jersey</option>
+</select>
+<textarea rows="5" placeholder="Catatan Tambahan"></textarea>
+<button type="submit" class="btn" style="border:none;cursor:pointer;width:100%;">Submit Pendaftaran</button>
+</form>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 MC RUN EVENT
+</footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+window.addEventListener('scroll', () => {
+reveals.forEach(el => {
+if(el.getBoundingClientRect().top < window.innerHeight - 100){
+el.classList.add('active');
+}
+});
+});
+</script>
+
+</body>
+</html>
